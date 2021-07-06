@@ -11,7 +11,8 @@ Hint: You can use the array function reverse
 
 const reverseString = (str) => {
     // Solution code here...
-
+  return str.split('').reverse().join('');
+ 
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -31,8 +32,12 @@ Output: ['a','b','c','d','e','f']
 
 const addInTheMiddle = (arr, val) => {
     // Solution code here...
+// let idx = 1;
+// let middleIndex = Math.floor(arr.length/2);
+ arr.splice(arr.length/2,0,val);
+return arr;
 };
-
+//let middleIndex = Math.floor(english1Gpa.length/2);
 /* ------------------------------------------------------------------------------------------------
 TESTS
 
